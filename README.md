@@ -15,18 +15,21 @@ it's just been re-set like a good piece of letterpress.
   descriptions, all three testimonials, both portfolio write-ups, the
   "Why choose us???" heading (all three question marks, non-negotiable),
   "Book with Santa", "Reserve A Date" — verbatim.
-- **The real photos.** All ten photos of actual Louisiana chimneys, job sites,
-  and soot piles, straight off the job. Captions like "SOOT 2" and
-  "JOB SITE 3" kept as-is. The before/after pair keeps its filename honor as
-  "Job No. 7". EXIF/GPS metadata has been stripped from all of them
-  (they're photos of customers' homes).
+- **The real photos.** All ten photos from the original site: the job-site,
+  soot-pile, and flue shots he took on jobs, plus the brass-tools photo from
+  his old home page. His captions ("SOOT 2", "JOB SITE 3") appear only on the
+  photos that carried them. The before/after pair keeps its filename honor as
+  "Job No. 7" (his files were named `before 7.jpg` / `after 7.jpg`). EXIF/GPS
+  metadata has been stripped from all of them (they're photos of customers'
+  homes).
 - **The structure.** Same three pages: Home, Book Online, Portfolio.
 
 ## What changed
 
 - **The AI stock images are gone** — the man sweeping a *lit* fireplace with a
-  straw broom has been retired, along with the clip-art house-value graphic.
-  Only real job photos remain.
+  straw broom has been retired, along with the clip-art house-value graphic
+  and the other generic stock shots. What remains are his own photos (and his
+  brass-tools pick).
 - **Typography.** Playfair Display (same didone family as the old headings),
   Lora for body text, Oswald for the small trade-card labels. All self-hosted
   in `fonts/` — no external requests, loads fast.
@@ -38,7 +41,8 @@ it's just been re-set like a good piece of letterpress.
 - **The leftover Wix store** (template cashmere sweaters and table lamps) was
   not carried over. Booking buttons now use `tel:` and `mailto:` links.
 - Basic SEO: real page titles, meta descriptions, and LocalBusiness
-  structured data with the real phone/email.
+  structured data with the real phone/email. (Once the site has a public
+  URL, add an `og:image` tag so shares show a picture.)
 
 ## Notes for whoever deploys this
 
