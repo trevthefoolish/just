@@ -183,7 +183,7 @@ a { color: inherit; }
 }
 .ornament.tight { max-width: 16rem; margin-inline: auto; }
 
-/* Arch frame — used once, on the hero, where the fireplace echo earns it */
+/* Arch frame — every fireplace has one */
 .arch {
   border-radius: 999px 999px 0 0;
   overflow: hidden;
@@ -196,17 +196,6 @@ a { color: inherit; }
   border-radius: 992px 992px 0 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-}
-
-/* Plain framed thumbnail, matching the portfolio galleries */
-.thumb {
-  border: 1px solid var(--brass-dim);
-  padding: 6px;
-}
-.thumb img {
-  width: 100%;
-  aspect-ratio: 3 / 4;
   object-fit: cover;
 }
 
@@ -300,7 +289,7 @@ figure.shot figcaption::before,
   text-decoration: none;
   margin-right: auto;
 }
-.brand img { width: 46px; height: 46px; }
+.brand img { width: 58px; height: 58px; }
 .brand b {
   font-family: var(--display);
   font-weight: 600;
@@ -394,8 +383,9 @@ figure.shot figcaption::before,
 .hero h1 {
   font-size: clamp(2.4rem, 6vw, 4.4rem);
   text-transform: uppercase;
-  margin: 1.1rem 0 0;
+  margin: 1.1rem 0 1.25rem;
 }
+.hero .lede { color: var(--cream-dim); }
 .hero .cta-row {
   display: flex;
   flex-wrap: wrap;
@@ -463,12 +453,14 @@ figure.shot figcaption::before,
 }
 .service {
   display: grid;
-  grid-template-columns: 8.5rem minmax(0, 1fr) auto;
+  grid-template-columns: 10rem minmax(0, 1fr) auto;
   gap: clamp(1.25rem, 3.5vw, 2.75rem);
   align-items: center;
   padding-block: clamp(1.75rem, 4vw, 2.5rem);
 }
 .service + .service { border-top: 1px solid rgba(200, 155, 90, 0.25); }
+.service .arch { padding: 6px; }
+.service .arch img { aspect-ratio: 3 / 4; }
 .service .no {
   font-family: var(--label);
   font-size: 0.78rem;
@@ -508,8 +500,9 @@ figure.shot figcaption::before,
 .service .meta .textlink { display: inline-block; margin-top: 1.1rem; }
 
 @media (max-width: 760px) {
-  .service { grid-template-columns: 6rem minmax(0, 1fr); }
-  .service .meta { grid-column: 2; text-align: left; margin-top: 0.75rem; }
+  .service { grid-template-columns: 1fr; }
+  .service .arch { max-width: 270px; }
+  .service .meta { text-align: left; margin-top: 0.25rem; }
 }
 
 /* ---------- Before / after ---------- */
@@ -576,9 +569,8 @@ figure.shot figcaption::before,
   gap: clamp(1.5rem, 4vw, 3rem);
 }
 .folio-teaser a.card { text-decoration: none; display: block; }
-.folio-teaser .thumb { overflow: hidden; }
-.folio-teaser .thumb img { aspect-ratio: 4 / 5; transition: transform 400ms ease; }
-.folio-teaser a.card:hover .thumb img { transform: scale(1.03); }
+.folio-teaser .arch img { aspect-ratio: 4 / 5; transition: transform 400ms ease; }
+.folio-teaser a.card:hover .arch img { transform: scale(1.03); }
 .folio-teaser header.sec {
   display: flex;
   align-items: end;
@@ -720,6 +712,14 @@ figure.shot figcaption::before,
   letter-spacing: 0.08em;
   margin: 0;
 }
+.reserve .prices {
+  font-family: var(--label);
+  font-size: 0.9rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--cream-dim);
+  margin-top: 1.1rem;
+}
 .reserve .cta-row {
   display: flex;
   justify-content: center;
@@ -756,7 +756,7 @@ figure.shot figcaption::before,
   border: 1px solid var(--brass-dim);
 }
 .book-card + .book-card { margin-top: clamp(1.75rem, 4vw, 2.75rem); }
-.book-card .arch { align-self: center; width: 100%; max-width: 210px; margin-inline: auto; padding: 6px; }
+.book-card .arch { align-self: center; width: 100%; max-width: 230px; margin-inline: auto; padding: 6px; }
 .book-card .arch img { aspect-ratio: 3 / 4; }
 .book-card h2 {
   font-family: var(--display);
@@ -797,6 +797,7 @@ figure.shot figcaption::before,
 .book-card .cta-row { display: flex; flex-wrap: wrap; gap: 1rem; }
 @media (max-width: 760px) {
   .book-card { grid-template-columns: 1fr; }
+  .book-card .arch { max-width: 290px; }
 }
 
 .book-note {
@@ -820,7 +821,7 @@ figure.shot figcaption::before,
   gap: clamp(2rem, 5vw, 4rem);
   align-items: start;
 }
-.site-footer .brand-block img { width: 84px; height: 84px; }
+.site-footer .brand-block img { width: 132px; height: 132px; }
 .site-footer .brand-block p {
   font-family: var(--display);
   font-weight: 600;

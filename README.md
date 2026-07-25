@@ -18,8 +18,8 @@ it's just been re-set like a good piece of letterpress.
 - **The real photos.** All ten photos from the original site: the job-site,
   soot-pile, and flue shots he took on jobs, plus the brass-tools photo from
   his old home page. His captions ("SOOT 2", "JOB SITE 3") appear only on the
-  photos that carried them. The before/after pair keeps its filename honor as
-  "Job No. 7" (his files were named `before 7.jpg` / `after 7.jpg`). EXIF/GPS
+  photos that carried them, and the before/after pair comes straight from his
+  own files (`before 7.jpg` / `after 7.jpg`). EXIF/GPS
   metadata has been stripped from all of them (they're photos of customers'
   homes).
 - **The structure.** Same three pages: Home, Book Online, Portfolio.
