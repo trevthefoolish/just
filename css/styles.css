@@ -109,7 +109,7 @@ body {
   background: var(--oxblood);
 }
 img { max-width: 100%; height: auto; display: block; }
-[id] { scroll-margin-top: 5.5rem; }
+[id] { scroll-margin-top: 7rem; }
 h1, h2, h3, h4, p, figure { margin: 0; }
 a { color: inherit; }
 ::selection { background: var(--teal); color: var(--soot); }
@@ -280,7 +280,7 @@ figure.shot figcaption::before,
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  padding-block: 0.7rem;
+  padding-block: 0.5rem;
 }
 .brand {
   display: flex;
@@ -289,7 +289,7 @@ figure.shot figcaption::before,
   text-decoration: none;
   margin-right: auto;
 }
-.brand img { width: 58px; height: 58px; }
+.brand img { width: 74px; height: 74px; }
 .brand b {
   font-family: var(--display);
   font-weight: 600;
@@ -353,6 +353,7 @@ figure.shot figcaption::before,
 
 @media (max-width: 760px) {
   .brand b { display: none; }
+  .brand img { width: 60px; height: 60px; }
   .nav-toggle { display: flex; }
   .site-nav {
     display: none;
@@ -373,7 +374,12 @@ figure.shot figcaption::before,
 }
 
 /* ---------- Hero ---------- */
-.hero { padding-block: clamp(3rem, 8vw, 6.5rem) clamp(3rem, 7vw, 5.5rem); }
+.hero { padding-block: clamp(2.5rem, 6vw, 5rem) clamp(3rem, 7vw, 5.5rem); }
+.hero .badge {
+  width: clamp(150px, 20vw, 210px);
+  height: auto;
+  margin-bottom: 1.25rem;
+}
 .hero .grid {
   display: grid;
   grid-template-columns: minmax(0, 7fr) minmax(0, 4fr);
@@ -821,7 +827,7 @@ figure.shot figcaption::before,
   gap: clamp(2rem, 5vw, 4rem);
   align-items: start;
 }
-.site-footer .brand-block img { width: 132px; height: 132px; }
+.site-footer .brand-block img { width: 184px; height: 184px; }
 .site-footer .brand-block p {
   font-family: var(--display);
   font-weight: 600;
